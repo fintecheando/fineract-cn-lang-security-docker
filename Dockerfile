@@ -6,9 +6,9 @@ RUN apk add --update \
 
 COPY lang-0.1.0-BUILD-SNAPSHOT.jar .
 
-COPY env_variables .
-
 COPY entrypoint.sh .
+
+COPY env_variables .
 
 RUN chmod +x /entrypoint.sh
 
